@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        h1 {
+            color: brown; text-decoration: underline; text-align: right;background-color: white; 
+        }
+        body{
+            background-color: gainsboro;
+        }
+        .registr{
+            color: white; background-color: green;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Student Registaration Form</h1>
+    <form>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" placeholder="Enter your first name" required>
+        <br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" placeholder="Enter your last name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="it should contain @">
+        <br><br>
+
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" placeholder="only 10 digits are allowed" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="birth">Date Of Birth:</label>
+        <input type="date" id="birth" >
+        <br><br>
+
+        <label for="adress">Adress:</label>
+        <textarea id="adress" ></textarea>
+        <br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city">
+        <br><br>
+
+        <label for="pin">Area PIN:</label>
+        <input type="text" id="pin">
+        <br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state">
+        <br><br>
+        <label for="quali">Qualification:</label>
+        <select id="quali">
+            <option disabled selected value="">Select Qualification:</option>
+            <option value="">Higher Certificates</option>
+            <option value="">Diplomas</option>
+            <option value="">Advanced Diplomas</option>
+            <option value="">Bachelor's degrees</option>
+          </select>
+
+        <br><br>
+        <label for="special">Specialization:</label>
+        <input type="checkbox" id="cs" >
+        <label for="cs">Computer Science</label>
+        <br>
+        <input type="checkbox" id="it" >
+        <label for="it">Information Technology</label>
+        <br>
+        <input type="checkbox" id="ca" >
+        <label for="ca">Computer Architecture</label>
+        <br>
+        <input type="checkbox" id="tc" >
+        <label for="tc">Tele Communication</label>
+        <br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" >
+
+        <br><br>
+        <button type="submit" class="registr">Registered</button>
+
+
+    </form>
+
+
+
+</body>
+</html>
